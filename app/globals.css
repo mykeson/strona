@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* select portfolio category */
+
+.cursor-pointer:hover {
+  cursor: pointer;
+  color: #303030;
+}
+
+.selected {
+  text-decoration: underline;
+  text-decoration-color: #c30d0d;
+  text-underline-offset: 10px;
+}
+
+/* navbar animations */
+
+.menu-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.menu-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* navber animations end */
+
+/* page when navbar open */
+.page-anim {
+}
+/* page when navbar open end */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
