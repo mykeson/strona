@@ -21,9 +21,15 @@ export default function Main() {
       case "Filmmaking":
         return (
           <div>
-            <h1 className="mt-32 flex gap-3 flex-wrap justify-center font-light sm:text-5xl lg:text-6xl text-gray-800">
+            <h1 className="mt-32 mb-16 flex gap-3 flex-wrap justify-center font-light sm:text-5xl lg:text-6xl text-gray-800">
               Doświadcz to
             </h1>
+            <div>
+              {/* To video co niby nie działa */}
+              <video autoPlay muted playsInline loop>
+                <source src="/video/cool_video.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         );
       case "Computer Science":
