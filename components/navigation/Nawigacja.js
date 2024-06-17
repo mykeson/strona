@@ -49,7 +49,7 @@ export default function Nawigacja() {
   };
 
   return (
-    <div className="relative bg-whity fixed">
+    <div className="bg-whity fixed z-[999]">
       <nav
         className={`bg-whity fixed flex w-full justify-between items-center px-10 border-b`}
       >
