@@ -45,21 +45,21 @@ export default function Main() {
             alt="Inspiracja"
           />
           {/* Arrows */}
-          <div className="flex mt-4 items-center">
+          <div className="flex mt-4 justify-start items-center gap-2">
             <img
               src="/img/insta_logo.svg"
               alt="insta_logo"
-              className="h-[18px] self-start opacity-70"
+              className="h-[18px] opacity-70"
             />
-            <p className="px-[6px] -mt-[2.5px]">@myk_eson</p>
+            <p className=" leading-none">@myk_eson</p>
           </div>
-          <div className="flex mt-2 items-center">
+          <div className="flex mt-2 justify-start items-center gap-2">
             <img
               src="/img/mail_icon.svg"
               alt="mail_icon"
               className="h-[20px] self-start opacity-70"
             />
-            <p className="px-[6px] -mt-[2.5px]">mikesoncz@gmail.com</p>
+            <p className="leading-none">mikesoncz@gmail.com</p>
           </div>
           <div className="self-start flex flex-col-2 mt-[4.5rem]">
             <h2 className="font-normal">
