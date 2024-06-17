@@ -3,7 +3,7 @@ import React from "react";
 export default function Filmmaking() {
   return (
     <div className="w-screen">
-      <div className="w-[1200px] m-auto m-0">
+      <div className="w-[1200px] m-0">
         <h1 className="mt-32 mb-16 flex gap-3 flex-wrap justify-center font-light sm:text-5xl lg:text-6xl text-gray-800">
           Doświadcz to
         </h1>
