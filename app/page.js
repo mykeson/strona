@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Nawigacja from "@/components/navigation/Nawigacja";
 import Arrows from "@/components/Arrows";
+import Filmmaking from "@/components/FIlmmaking";
 
 export default function Main() {
   const [selectedCategory, setSelectedCategory] = useState("Filmmaking");
@@ -19,19 +20,7 @@ export default function Main() {
           </div>
         );
       case "Filmmaking":
-        return (
-          <div>
-            <h1 className="mt-32 mb-16 flex gap-3 flex-wrap justify-center font-light sm:text-5xl lg:text-6xl text-gray-800">
-              Doświadcz to
-            </h1>
-            <div>
-              {/* To video co niby nie działa */}
-              <video autoPlay muted playsInline loop>
-                <source src="/video/cool_video.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        );
+        return <Filmmaking />;
       case "Computer Science":
         return (
           <div>
@@ -56,8 +45,24 @@ export default function Main() {
             alt="Inspiracja"
           />
           {/* Arrows */}
+          <div className="flex mt-4 items-center">
+            <img
+              src="/img/insta_logo.svg"
+              alt="insta_logo"
+              className="h-[18px] self-start opacity-70"
+            />
+            <p className="px-[6px] -mt-[2.5px]">@myk_eson</p>
+          </div>
+          <div className="flex mt-2 items-center">
+            <img
+              src="/img/mail_icon.svg"
+              alt="mail_icon"
+              className="h-[20px] self-start opacity-70"
+            />
+            <p className="px-[6px] -mt-[2.5px]">mikesoncz@gmail.com</p>
+          </div>
           <div className="self-start flex flex-col-2 mt-[4.5rem]">
-            <h2 className="text-2xl font-normal">
+            <h2 className="font-normal">
               Poznaj moje
               <span className="text-logored tracking-widest"> Pasje</span>
             </h2>
@@ -109,7 +114,7 @@ export default function Main() {
           </li>
         </ul>
       </div>
-      <div className="w-3/4 mt-10">{renderContent()}</div>
+      <div className="mt-10">{renderContent()}</div>
     </div>
   );
 }

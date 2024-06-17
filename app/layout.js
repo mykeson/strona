@@ -19,8 +19,10 @@ export default function RootLayout({ children }) {
     // Dodac zmiane jezyka na przyklad
     <html lang="en">
       <body className={`${lato.variable} bg-whity font-lato`}>
-        <Nawigacja />
-        {children}
+        <div className="relative z-50">
+          <Nawigacja />
+        </div>
+        <div className="-z-1">{children}</div>
       </body>
     </html>
   );
